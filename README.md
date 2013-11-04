@@ -2,6 +2,9 @@
 
 TravelDealNow is a simple app providing travel deals in a friendly format from an undocumented API.
 
+Check out a live version of the app hosted on Heroku [http://traveldealnow.herokuapp.com/](http://traveldealnow.herokuapp.com/)
+
+
 ### Installation
 
 To run TravelDealNow locally follow these steps:

@@ -1,3 +1,22 @@
-<% @deals.each do |deal| %>
-  <p><%= deal["name"] %></p>
-<% end %>
+<h1>Deals</h1>
+
+<div class="row deal-header">
+  <div class="col-md-3 col-md-offset-1">quick facts</div>
+  <div class="col-md-5">description</div>
+  <div class="col-md-2">map</div>
+</div>
+<div class="deals-container">
+  <% @deals.each do |deal| %>
+  <div class="row">
+    <div class="col-md-1">image</div>
+    <div class="col-md-2">
+      <p><%= deal["name"] %></p>
+      <p>stars</p>
+      <p>rate</p>
+    </div>
+    <div class="col-md-5">description</div>
+    <div class="col-md-2"><img src="//placehold.it/160x100" /></div>
+    <div class="col-md-2">buttons</div>
+  </div>
+  <% end %>
+</div>
