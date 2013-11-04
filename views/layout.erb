@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TravelDealNow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../css/style.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">TravelDealNow</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a data-toggle="modal" data-target="#about-modal">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="about-modal-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="about-modal-label">About TravelDealNow</h4>
+          </div>
+          <div class="modal-body">
+            <p>TravelDealNow is a simple app providing travel deals from an undocumented API.</p>
+            <p>Hope you like the deals! Find more awesome travel deals, tips and resources at <a href="//expedia.com">Expedia</a>!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

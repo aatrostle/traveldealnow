@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-  "Hello Expedia!"
+  erb :index
 end
