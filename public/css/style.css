@@ -22,6 +22,18 @@ body.modal-open,.modal-open .navbar-fixed-top,.modal-open .navbar-fixed-bottom {
   font-weight: bold;
 }
 
+div.deal-stars, div.deal-stars div {
+  display: block;
+  background: url('../img/stars.png') 0 -16px repeat-x;
+  width: 80px;
+  height: 16px;
+  margin-top: 5px;
+}
+
+div.deal-stars div {
+  background-position: 0 0;
+}
+
 .old-price {
   color: red;
   text-decoration: line-through;

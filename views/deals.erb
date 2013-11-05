@@ -13,6 +13,7 @@
     <div class="col-md-1"><img class="img-circle" style src="<%= deal["imageUrl"] %>" /></div>
     <div class="col-md-2">
       <div class="deal-name"><%= deal["name"] %></div>
+      <div class="deal-destination"><%= deal["longDestinationName"] %></div>
       <div class="deal-stars"><%= deal["starRating"] %></div>
     </div>
     <div class="col-md-1">
@@ -25,7 +26,7 @@
     </div>
 
     <div class="col-md-2">
-      <a href="<%= URI.decode(deal["dealDeepLink"]) %>" class="btn btn-default btn-block">Learn more</a>
+      <a href="<%= URI.decode(deal["dealDeepLink"]) %>" class="btn btn-success btn-block">Learn more</a>
     </div>
   </div>
   <% end %>
