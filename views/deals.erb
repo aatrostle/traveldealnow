@@ -21,8 +21,9 @@
     </div>
     <div class="col-md-4"><%= deal["description"] %></div>
     <div class="col-md-2">
-      <img src="//placehold.it/160x100" />
-      <%= "#{deal["latitude"]},#{deal["longitude"]}" %></div>
+      <img src="<%= google_map(deal["latitude"], deal["longitude"], 14) %>" />
+    </div>
+
     <div class="col-md-2">
       <a href="<%= URI.decode(deal["dealDeepLink"]) %>" class="btn btn-default btn-block">Learn more</a>
     </div>

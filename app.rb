@@ -9,6 +9,12 @@ def get_deals
   @deals = JSON.parse(retrieve_deals.body)
 end
 
+helpers do
+  def google_map lat, long, zoom
+    "http://maps.googleapis.com/maps/api/staticmap?markers=size:small|#{lat},#{long}|&zoom=#{zoom}&size=160x100&sensor=true&key=AIzaSyBGUksvPrbnGkGU7dFo9L8ZNQPYCVUkc3k"
+  end
+end
+
 get '/' do
   erb :index
 end
