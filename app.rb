@@ -5,7 +5,12 @@ require 'json'
 BASE_URI = "http://deals.expedia.com/beta/deals/hotels.json"
 
 def get_deals
-  retrieve_deals = HTTParty.get(BASE_URI)
+  if params.empty?
+    retrieve_deals = HTTParty.get(BASE_URI)
+  else
+    query = URI.escape(params.collect{|k,v| "#{k}=#{v}"}.join('&'))
+    retrieve_deals = HTTParty.get("#{BASE_URI}?#{query}")
+  end
   @deals = JSON.parse(retrieve_deals.body)
 end
 

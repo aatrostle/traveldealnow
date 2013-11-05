@@ -17,8 +17,8 @@
       <div class="deal-stars"><%= deal["starRating"] %></div>
     </div>
     <div class="col-md-1">
-      <small class="old-price"><%= "Was $#{deal["pricePerNight"].round}" %></small>
-      <strong class="new-price"><%= "Now $#{deal["originalPricePerNight"].round}" %></strong>
+      <small class="old-price"><%= "was $#{deal["originalPricePerNight"].round}" %></small>
+      <strong class="new-price"><%= "Now $#{deal["pricePerNight"].round}" %></strong>
     </div>
     <div class="col-md-4"><%= deal["description"] %></div>
     <div class="col-md-2">

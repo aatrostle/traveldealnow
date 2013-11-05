@@ -7,11 +7,19 @@ body.modal-open,.modal-open .navbar-fixed-top,.modal-open .navbar-fixed-bottom {
   margin-right:0px
 }
 
+.deal-welcome {
+  padding: 30px 0px;
+}
+
+.deal-welcome h2 {
+  margin-bottom: 20px;
+}
+
 .deals-header {
   border-bottom: 1px solid #ddd;
   margin-bottom: 10px;
 }
-.deals-container {}
+
 .deal-row {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
@@ -38,8 +46,4 @@ div.deal-stars div {
   color: red;
   text-decoration: line-through;
   font-size:;
-}
-
-.new-price {
-  font-size: 16px;
 }
