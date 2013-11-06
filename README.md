@@ -17,7 +17,10 @@ To run TravelDealNow locally follow these steps:
 
 ### Known issues
 
-*coming soon*
+* Google Static Maps API key should be an environment variable
+* `google_map` helper method could take a hash and be more useful
+* No sorting of deals
+* No tests
 
 ### License
 
